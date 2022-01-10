@@ -13,13 +13,18 @@ const listUsers = ['giovanni@gmail.com', 'antonio@gmail.com', 'pietro@gmail.com'
 
 //2
 let emailUser = prompt('Inserisci la tua mail');
+let foundEmail= false;
 
 //3
 for(let i = 0; i < listUsers.length; i++ ){
-    currentUser = listUsers[i];
-    if(currentUser = listUsers[i]){
-        console.log('la tua mail è'+'' &{currentUser} )
-    } else{
-        console.log('utente non registrato');
+    if(emailUser == listUsers[i]){
+        foundEmail= true;
     }
 }
+
+if(foundEmail){
+    console.log('la tua mail è registrata' )
+} else{
+    console.log('utente non registrato');
+}
+
