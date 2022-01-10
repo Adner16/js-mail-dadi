@@ -14,6 +14,7 @@ const listUsers = ['giovanni@gmail.com', 'antonio@gmail.com', 'pietro@gmail.com'
 //2
 let emailUser = prompt('Inserisci la tua mail');
 let foundEmail= false;
+const displayElement = document.getElementById(dispaly);
 
 //3
 for(let i = 0; i < listUsers.length; i++ ){
@@ -22,8 +23,11 @@ for(let i = 0; i < listUsers.length; i++ ){
     }
 }
 
+
+
 if(foundEmail){
-    console.log('la tua mail è registrata' )
+    displayElement.innerHTML = `'la tua mail ${emailUser} è registrata`
+    console.log('la tua mail è registrata');
 } else{
     console.log('utente non registrato');
 }
