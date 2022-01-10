@@ -12,10 +12,11 @@ console.log('JS OK');
 const listUsers = ['giovanni@gmail.com', 'antonio@gmail.com', 'pietro@gmail.com', 'francesco@gmail.com'];
 
 //2
-let currentUser = prompt('Inserisci la tua mail');
+let emailUser = prompt('Inserisci la tua mail');
 
 //3
 for(let i = 0; i < listUsers.length; i++ ){
+    currentUser = listUsers[i];
     if(currentUser = listUsers[i]){
         console.log('la tua mail è'+'' &{currentUser} )
     } else{
